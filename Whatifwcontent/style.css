@@ -1,0 +1,133 @@
+html{
+    height: 100%;
+    width: 99%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+#enter{
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+}
+
+#text{
+    display: flex;
+    flex-direction: row;
+}
+
+#text h1{
+    font-size: 300%;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    font-weight: bold;
+}
+
+#text h1 span{
+    display: flex;
+    align-items: end;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}
+
+#bg_dot{
+    animation-name: wellcome;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;  
+}
+
+#scroll{
+    height: 50px;
+    width: 50px;
+    background-color: none;
+    border-right: #fff solid 5px;
+    border-bottom: #fff solid 5px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 30vh;
+}
+
+@keyframes wellcome{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(215);
+    }
+}
+header{
+    height: 100vh;
+    width: 99vw;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+    position: static;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h2{
+    color: #fff;
+    font-size: 200%;
+    margin: 0;
+
+}
+
+header p{
+    color: #fff;
+    font-size: 150%;
+    font-style: italic;
+    margin-top:-25;
+}
+
+
+#page{
+    height: 75vh;
+    width: 99vw;
+    background-color: #fff;
+    position: static;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.card{
+    height: 65vh;
+    width: 20%;
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.card h3{
+    font-size: 150%;
+
+}
+
+.card p{
+    font-size: 110%;
+}
+
+
